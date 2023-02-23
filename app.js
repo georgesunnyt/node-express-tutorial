@@ -22,7 +22,8 @@ app.use(errorHandlerMiddleWare)
 
 const start = async () => {
     try {
-        await connectDB(process.env.MONGO_URI)
+        const connectionString =`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.1gqps1n.mongodb.net/Cluster0?retryWrites=true&w=majority`
+        await connectDB(connectionString)
         app.listen(port, () => {
             console.log(`app is running on port ${port}`)
         })

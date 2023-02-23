@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "c89339c0-ef03-454c-ac00-73713f9d70d8",
+		"name": "Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"_postman_id": "af01918f-0cfe-49fd-a1e4-35ec9afd70b7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/products",
+				"description": "Get Products"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products testing",
+			"_postman_id": "ab7c5cba-4e38-4d40-a057-44b4dc12d53a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/products/static"
+			},
+			"response": []
+		}
+	]
+}

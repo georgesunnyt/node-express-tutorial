@@ -7,21 +7,69 @@
 	"item": [
 		{
 			"name": "Get all products",
-			"_postman_id": "af01918f-0cfe-49fd-a1e4-35ec9afd70b7",
+			"id": "af01918f-0cfe-49fd-a1e4-35ec9afd70b7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{URL}}/products",
+				"url": {
+					"raw": "{{URL}}/products?sort=price&numericFilters=price>=50,rating>4",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "30",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "price"
+						},
+						{
+							"key": "fields",
+							"value": "company, rating",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "modern bookshelf",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "numericFilters",
+							"value": "price>=50,rating>4"
+						}
+					]
+				},
 				"description": "Get Products"
 			},
 			"response": []
 		},
 		{
 			"name": "Get all products testing",
-			"_postman_id": "ab7c5cba-4e38-4d40-a057-44b4dc12d53a",
+			"id": "ab7c5cba-4e38-4d40-a057-44b4dc12d53a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
